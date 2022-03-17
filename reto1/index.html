@@ -82,7 +82,7 @@
 
     <script type="module">
         import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm"
-        const supabase = createClient('https://xyzcompany.supabase.co', 'public-anon-key')
+        const supabase = createClient('process.env.supabaseurl', 'process.env.publicanonkey')
         const app = document.querySelector('#app')
         const { data, error } = await supabase
             .from('my_dataset')
