@@ -82,7 +82,7 @@
 
     <script type="module">
         import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm"
-        const supabase = createClient(process.env.supabaseurl, process.env.publicanonkey)
+        const supabase = createClient("https://rtpajjfwmfjmaoohfgpo.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ0cGFqamZ3bWZqbWFvb2hmZ3BvIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDc1MTEzMTgsImV4cCI6MTk2MzA4NzMxOH0.NgBPjE-mX1sT-H7kKqoeZHD9bYdNx9ePGU0Jv1gzE4o")
         const app = document.querySelector('#app')
         const { data, error } = await supabase
             .from('my_dataset')
